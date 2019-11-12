@@ -1,4 +1,5 @@
 # PullToRefresh
+![](https://github.com/phuhuynh2411/PullToRefresh/blob/master/Pull%20to%20refresh.gif)
 
 Add a Pull to Refresh feature to the table view controller.
 
