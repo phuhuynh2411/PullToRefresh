@@ -9,6 +9,9 @@ Add a Pull to Refresh feature to the table view controller.
 refreshControl = UIRefreshControl()
 refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh")
 refreshControl?.addTarget(self, action: #selector(refreshTableView(sender:)), for: .valueChanged)
+
+// Add the line below if you are using UITableView
+// tableView.addSubview(refreshControl)
 ```
 - Add a method to refresh the table view data source. You must call the refreshController?.endRefreshing() method at a point in the code to end refresing.
 ```swift
