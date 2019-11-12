@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		843DCA84237AAEA000A77181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DCA83237AAEA000A77181 /* AppDelegate.swift */; };
-		843DCA86237AAEA000A77181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DCA85237AAEA000A77181 /* SceneDelegate.swift */; };
-		843DCA88237AAEA000A77181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DCA87237AAEA000A77181 /* ViewController.swift */; };
 		843DCA8B237AAEA000A77181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843DCA89237AAEA000A77181 /* Main.storyboard */; };
 		843DCA8D237AAEA600A77181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843DCA8C237AAEA600A77181 /* Assets.xcassets */; };
 		843DCA90237AAEA600A77181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843DCA8E237AAEA600A77181 /* LaunchScreen.storyboard */; };
+		843DCA98237AAF3200A77181 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DCA97237AAF3200A77181 /* CustomTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		843DCA80237AAEA000A77181 /* PullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843DCA83237AAEA000A77181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		843DCA85237AAEA000A77181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		843DCA87237AAEA000A77181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		843DCA8A237AAEA000A77181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843DCA8C237AAEA600A77181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843DCA8F237AAEA600A77181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843DCA91237AAEA600A77181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843DCA97237AAF3200A77181 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				843DCA83237AAEA000A77181 /* AppDelegate.swift */,
-				843DCA85237AAEA000A77181 /* SceneDelegate.swift */,
-				843DCA87237AAEA000A77181 /* ViewController.swift */,
 				843DCA89237AAEA000A77181 /* Main.storyboard */,
+				843DCA97237AAF3200A77181 /* CustomTableViewController.swift */,
 				843DCA8C237AAEA600A77181 /* Assets.xcassets */,
 				843DCA8E237AAEA600A77181 /* LaunchScreen.storyboard */,
 				843DCA91237AAEA600A77181 /* Info.plist */,
@@ -138,9 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843DCA88237AAEA000A77181 /* ViewController.swift in Sources */,
+				843DCA98237AAF3200A77181 /* CustomTableViewController.swift in Sources */,
 				843DCA84237AAEA000A77181 /* AppDelegate.swift in Sources */,
-				843DCA86237AAEA000A77181 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RUFVFAF79;
 				INFOPLIST_FILE = PullToRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = filesoft.co.PullToRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RUFVFAF79;
 				INFOPLIST_FILE = PullToRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = filesoft.co.PullToRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
